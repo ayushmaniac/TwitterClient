@@ -7,18 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".ui.splash.SplashActivity">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/tw_seach_client"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:lottie_fileName="search.json"
-        app:lottie_autoPlay="true"
-        app:lottie_speed="1"
-        app:lottie_loop="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="twitter.json"
+        app:lottie_loop="false"
+        app:lottie_speed="1">
 
         <!--<com.airbnb.lottie.LottieAnimationView
             android:layout_width="wrap_content"

@@ -8,4 +8,5 @@
     </string>
     <string name="server_connection_error">Not able to connect, please retry again</string>
     <string name="enter_text">Enter Text</string>
+    <string name="tw_seach_client">TW Seach Client</string>
 </resources>
