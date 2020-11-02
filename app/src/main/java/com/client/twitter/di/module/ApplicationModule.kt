@@ -2,7 +2,11 @@ package com.client.twitter.di.module
 
 import android.content.Context
 import androidx.room.Room
+import com.client.twitter.BuildConfig
 import com.client.twitter.TwitterClientApplication
+import com.client.twitter.data.local.TweetsDatabase
+import com.client.twitter.data.remote.NetworkEssentials
+import com.client.twitter.data.remote.NetworkService
 import com.client.twitter.utils.network.NetworkHelper
 import dagger.Module
 import dagger.Provides
@@ -24,12 +28,6 @@ class ApplicationModule(private val application : TwitterClientApplication) {
     @Provides
     fun provideNetworkHelper(): NetworkHelper = NetworkHelper(application)
 
- /*   @Provides
-    fun provideSchedulerProvider(): SchedulerProvider = RxSchedulerProvider()
-
-
-
-
     @Provides
     @Singleton
     fun provideNetworkService(): NetworkService = NetworkEssentials.create(
@@ -41,10 +39,9 @@ class ApplicationModule(private val application : TwitterClientApplication) {
 
     @Provides
     @Singleton
-    fun getNewsDatabase() = Room.databaseBuilder(
+    fun getTweetsDatabase() = Room.databaseBuilder(
         application,
-        NewsDatabase::class.java,
-        "news_database")
+        TweetsDatabase::class.java,
+        "tweets_database")
         .build()
-*/
 }

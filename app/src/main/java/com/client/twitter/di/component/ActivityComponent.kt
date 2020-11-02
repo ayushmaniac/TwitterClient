@@ -2,7 +2,7 @@ package com.client.twitter.di.component
 
 import com.client.twitter.di.ActivityScope
 import com.client.twitter.di.module.ActivityModule
-import com.client.twitter.ui.main.MainActivity
+import com.client.twitter.ui.main.ui.MainActivity
 import com.client.twitter.ui.splash.SplashActivity
 import dagger.Component
 
